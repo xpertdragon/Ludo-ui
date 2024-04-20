@@ -1,0 +1,287 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: boreder-box;
+}
+
+body {
+
+	background: tomato;
+}
+
+.parent {
+	background: gray;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.ludo {
+	background: white;
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	left: calc(50% - 300px);
+	top: calc(50% - 300px);
+}
+
+.ludo .top_row {
+	background: pink;
+	width: 100%;
+	position: absolute;
+	height: calc((100% / 5) * 2);
+}
+.ludo .middle_row {
+	background: fuchsia ;
+	width: 100%;
+	position: absolute;
+	height: calc(100% / 5);
+	top: calc(100% - ((100% / 5) * 3));
+}
+.ludo .bottom_row {
+	background: lightpink;
+	width: 100%;
+	height: calc((100% / 5) * 2);
+	position: absolute;
+	top: calc(100% - ((100% / 5) * 2));
+	
+}
+
+
+.left_col {
+	background: yellow;
+	height: 100%;
+	position: absolute;
+	width: calc((100% / 5)* 2);
+}
+.middle_row .left_col {
+	background: white;
+}
+
+.bottom_row .left_col {
+	background: red;
+}
+
+.middle_col {
+	background: white;
+	height: 100%;
+	position: absolute;
+	width: calc(100% / 5);
+	left: calc(60% - ((100% / 5)))
+}
+
+.right_col {
+	background: blue;
+	height: 100%;
+	position: absolute;
+	width: calc((100% / 5)* 2);
+	left: calc(100% - ((100% / 5)* 2));
+}
+.middle_row .right_col {
+	 background: white;
+}
+
+.bottom_row .right_col {
+	 background: green;
+}
+
+.player {
+	background: white;
+	border: 2px solid black;
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+}
+
+.a ,.b , .c ,.d {  
+	 background: yellow;
+	 border: 2px solid black;
+	 width: 40px;
+	 height: 40px;
+	 position: absolute;
+}
+
+.a ,.c {
+
+	left: 15%;
+	top: 15%;
+}
+
+.c {
+	top: calc(85% - 40px);
+}
+
+.b ,.d {
+	left: calc(85% - 40px);
+	top: 15%;
+}
+.d {
+	top: calc(85% - 40px);
+}
+
+.two .a ,.two .b ,.two .c ,.two .d {
+	background: blue;
+}
+
+.three .a ,.three .b ,.three .c ,.three .d {
+	background: red;
+}
+.four .a ,.four .b ,.four .c ,.four .d {
+	background: green;
+}
+
+.first ,.sec ,.third ,.fourth ,.fifth ,.sixth {
+	background: white;
+	width: calc((100% / 6) - 1px);
+	height: calc(100% - 3px);
+	position: absolute;
+}
+
+.col1 , .col2  {
+	background: white;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	height: calc(100% / 3);
+	width: 100%;
+	position: relative;
+}
+
+.col3 {
+	background: white;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	height: calc(100% / 3);
+	width: 100%;
+	position: relative;
+}
+
+.t .col1, .t .col2, .t .col3 {
+	border-left: 1px solid black;
+}
+
+.se .col1 ,.se .col2 ,.se .col3 ,.s .col1 ,.s .col2 ,.s .col3,.f .col1 ,.f .col2 ,.f .col3 {
+	border-left: 1px solid black;
+}
+.sec {
+	left: 40px;
+}
+.sec .col1 ,.sec .col2 {
+	background: yellow;
+}
+
+.third {
+	left: 80px;
+}
+.third .col2 {
+	background: yellow;
+}
+
+.fourth {
+	left: 120px;
+}
+.fourth .col2 {
+	background: yellow;
+}
+.fifth {
+	left: 160px;
+}
+.fifth .col2 {
+	background: yellow;
+}
+.sixth {
+	left: 200px;
+}
+.sixth .col2 {
+	background: yellow;
+}
+
+.se .col1 {
+	background: white;
+}
+
+.se .col2  {
+	background: green;
+}
+
+.t .col2 {
+	background: green;
+}
+.s .col2 {
+
+	background: white;
+}
+.f .col2 ,.f .col3 {
+	background: green;
+}
+
+
+.lm ,.lm2 ,.lm3 {
+	background: white;
+	width: calc(100% / 3);
+	height: 100%;
+	top: 1px;
+	position: absolute;
+
+}
+
+.lm2 {
+	left: calc(100% / 3);
+}
+
+.lm3 {
+
+	left: calc((100% / 3) * 2);
+}
+
+.lmc , .lmc1 {
+	background: white;
+	width: 100%;
+	position: relative;
+	height: calc((100% / 6) - 1px);
+	border-bottom: 1px solid black; 
+	border-left: 1px solid black; 
+	border-right: 1px solid black; 
+
+}
+
+.lm2 .lmc ,.lm3 .h {
+	background: blue;
+}
+
+.lw ,.lw2 ,.lw3 {
+	background: white;
+	width: calc(100% / 3);
+	height: 100%;
+	position: absolute;
+
+}
+.lw2 {
+	left: calc(100% / 3);
+}
+
+.lw3 {
+
+	left: calc((100% / 3) * 2);
+}
+.lwc , .lwc1 {
+	background: white;
+	width: 100%;
+	position: relative;
+	height: calc((100% / 6) - 1px);
+	border-top: 1px solid black; 
+	border-left: 1px solid black; 
+	border-right: 1px solid black; 
+
+}
+.lw2 .lwc ,.lw .l  {
+	background: red;
+} 
+
+
+
+
+
+
